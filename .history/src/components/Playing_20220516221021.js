@@ -25,7 +25,7 @@ export default function Playing() {
                 showJumpControls={false}
                 onClickNext={handleClickNext}
                 onClickPrevious={handleClickPrev}
-                onEnded={handlePauseSong}
+                on
             />
         </div>
     );

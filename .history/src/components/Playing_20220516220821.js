@@ -12,9 +12,7 @@ export default function Playing() {
     const handleClickPrev = () => {
         handleSetSong(song.id - 1);
     };
-    const handlePauseSong = () => {
-        console.log('a');
-    };
+    const handlePauseSong()
     return (
         <div>
             <AudioPlayer
@@ -25,7 +23,7 @@ export default function Playing() {
                 showJumpControls={false}
                 onClickNext={handleClickNext}
                 onClickPrevious={handleClickPrev}
-                onEnded={handlePauseSong}
+                onPause={handlePauseSong}
             />
         </div>
     );
