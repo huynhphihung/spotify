@@ -13,7 +13,7 @@ export default function Playing() {
         handleSetSong(song.id - 1);
     };
     const handlePauseSong = () => {
-        handleClickNext();
+        handleClickNext()
     };
     return (
         <div>
