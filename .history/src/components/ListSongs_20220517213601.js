@@ -15,7 +15,7 @@ export default function ListSongs() {
         setidSong(song.id);
     }, [song]);
     return (
-        <div className="col-span-2 overflow-y-scroll sm:overflow-y-scroll absolute top-96 pb-24 lg:pb-0 lg:relative lg:top-0 md:relative md:top-0">
+        <div className="col-span-2 overflow-y-scroll sm:overflow-y-scroll absolute top-96 pb-12 lg:pb-0 lg:relative lg:top-0 md:relative md:top-0 md:pb-0">
             <table className="table-auto w-full ">
                 <thead className="text-white h-12">
                     <th className="w-[8%]">#</th>
