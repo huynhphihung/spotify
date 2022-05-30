@@ -1,0 +1,10 @@
+.lyrics {
+    width: 234px;
+    height: 362px;
+    text-align: center;
+    margin: 0 auto;
+    overflow-y: auto;
+    display: block;
+    line-height: 2.5;
+    cursor: default;
+}
