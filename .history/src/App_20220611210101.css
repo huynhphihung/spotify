@@ -79,7 +79,3 @@ h5,
 h6 {
     overflow-wrap: break-word;
 }
-
-td, tr {
-    border: none;
-}

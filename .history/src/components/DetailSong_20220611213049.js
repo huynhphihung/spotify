@@ -17,7 +17,7 @@ export default function DetailSong() {
                 <img className="hidden sm:block w-[70px] rounded-full" src={song.links.images[1].url} alt="avatar" />
                 <span className="text-xl text-white text-center">{song.author}</span>
             </div>
-            <div className="text-white text-center text-xl sm-hidden">Lyrics</div>
+            <div className="text-white text-center text-xl sm:">Lyrics</div>
             <div className="text-cyan-500 mt-4 w-52 lyrics sm:hidden md:block xl:block">{song.lyric}</div>
         </div>
     );

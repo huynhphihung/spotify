@@ -8,8 +8,8 @@
     cursor: default;
 }
 
-.sm-hidden {
-    display: none;
+.lyric-title {
+    
 }
 
 @media (max-width: 460px) {

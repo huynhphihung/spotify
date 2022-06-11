@@ -8,11 +8,7 @@
     cursor: default;
 }
 
-.sm-hidden {
-    display: none;
-}
-
-@media (max-width: 460px) {
+@media (max-width: px) {
     .lyrics {
         display: none;
     }

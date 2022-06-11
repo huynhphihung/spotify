@@ -8,8 +8,14 @@
     cursor: default;
 }
 
-.sm-hidden {
-    display: none;
+.lyric-title {
+    position: relative;
+}
+
+.lyric-title:after {
+    content: ">";
+    position: absolute;
+    bottom: 0;
 }
 
 @media (max-width: 460px) {

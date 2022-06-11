@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import { useContext } from 'react';
 import { Songs } from '../Context';
 
@@ -6,6 +7,10 @@ import './index.css';
 
 export default function DetailSong() {
     const { song } = useContext(Songs);
+
+    const [lyric, setLyric] = useState(song.lyric[0])
+    console.log(lyric);
+
     return (
         <div className="col-span-1 p-3 bg-slate-700 fixed w-full top-24 z-40 lg:relative lg:top-0 md:relative md:top-0">
             <h2 className="text-cyan-500 font-bold text-center lg:text-left">Now playing</h2>
@@ -15,10 +20,12 @@ export default function DetailSong() {
             </div>
             <div className="flex justify-evenly items-center mt-4">
                 <img className="hidden sm:block w-[70px] rounded-full" src={song.links.images[1].url} alt="avatar" />
-                <span className="text-xl text-white text-center">{song.author}</span>
+                <span className="text-xl text-white">{song.author}</span>
             </div>
-            <div className="text-white text-center text-xl sm-hidden">Lyrics</div>
-            <div className="text-cyan-500 mt-4 w-52 lyrics sm:hidden md:block xl:block">{song.lyric}</div>
+            <button onClick={() => {}} className="text-white text-center text-xl lyric-title">
+                <div>Lyrics</div>
+            </button>
+            <div className="text-cyan-500 mt-4 w-52 lyrics sm:hidden md:block xl:block">{lyric}</div>
         </div>
     );
 }

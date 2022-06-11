@@ -8,8 +8,10 @@
     cursor: default;
 }
 
-.sm-hidden {
-    display: none;
+.lyric-title span {
+    position: absolute;
+    content: '>';
+    top: 0;
 }
 
 @media (max-width: 460px) {

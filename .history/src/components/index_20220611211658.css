@@ -1,0 +1,36 @@
+.lyrics {
+    width: 234px;
+    height: 362px;
+    text-align: center;
+    margin: 0 auto;
+    overflow-y: auto;
+    line-height: 2.5;
+    cursor: default;
+}
+
+.lyric-title {
+    display: block;
+    margin: ;
+}
+
+.lyric-title div {
+    position: relative;
+}
+
+.lyric-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 460px) {
+    .lyrics {
+        display: none;
+    }
+}
